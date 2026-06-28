@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chinnam Thanu Sree - Computer Science Engineering Student, Full Stack Developer, AI Enthusiast. Portfolio showcasing projects, skills, and achievements." />
+  <meta name="keywords" content="Chinnam Thanu Sree, portfolio, full stack developer, AI, computer science, VR Siddhartha" />
+  <meta name="author" content="Chinnam Thanu Sree" />
+  <meta property="og:title" content="Chinnam Thanu Sree | Portfolio" />
+  <meta property="og:description" content="Computer Science Engineering Student | Full Stack Developer | AI Enthusiast" />
+  <title>Chinnam Thanu Sree | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">TS</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <p class="preloader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Thanu<span>Sree</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-image-wrap" data-tilt>
+        <div class="hero-image-ring ring-1"></div>
+        <div class="hero-image-ring ring-2"></div>
+        <div class="hero-image-ring ring-3"></div>
+        <img src="images/thanusree.jpg" alt="Chinnam Thanu Sree" class="hero-img">
+        <div class="hero-img-glow"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+        <h1 class="hero-name">Chinnam <br /><span class="gradient-text">Thanu Sree</span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typed"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">Passionate tech enthusiast diving into the world of IT — building full-stack solutions, exploring AI frontiers, and turning ideas into reality through code.</p>
+        <div class="hero-cta">
+          <a href="resume.pdf" download class="btn btn-primary magnetic">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline magnetic">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:thanusreechinnam@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/chinnam-thanu-sree-6502a92a3/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A glimpse into my journey, goals, and passion for technology</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>Hello! I'm Thanu Sree</h3>
+          <p>I'm a dedicated Computer Science Engineering student at V R Siddhartha Engineering College with a CGPA of 9.10. I'm passionate about leveraging technology to solve real-world problems — from quantum-inspired delivery optimization to rural healthcare access.</p>
+          <p>My journey spans full-stack development, AI exploration, and community service through NSS. I thrive in collaborative environments and love turning complex ideas into elegant, functional solutions.</p>
+          <div class="about-objective">
+            <h4><i class="fas fa-bullseye"></i> Career Objective</h4>
+            <p>Seeking an internship to leverage my skills and gain hands-on experience. I'm a passionate tech enthusiast excited to dive into the world of IT — learning, growing, and contributing to real projects with a supportive team.</p>
+          </div>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">thanusreechinnam@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <span class="info-value">+91 9182464549</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">CGPA</span>
+              <span class="info-value">9.10 / 10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-number" data-count="9">0</div>
+            <div class="stat-label">CGPA</div>
+            <div class="stat-sublabel">.10 / 10</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Projects</div>
+            <div class="stat-sublabel">Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">Certifications</div>
+            <div class="stat-sublabel">Earned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Hackathons</div>
+            <div class="stat-sublabel">Participated</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline-wrap reveal">
+        <h3 class="sub-heading">My Journey</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-year">2023 – Present</span>
+              <h4>B.Tech in Computer Science</h4>
+              <p>VR Siddhartha Engineering College — CGPA 9.10</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-year">2025</span>
+              <h4>Rise Internship – Tamizhan Skills</h4>
+              <p>Full Stack Web Development — Built responsive pages & integrated APIs</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-year">2025</span>
+              <h4>AI Autonomous Hackathon Coordinator</h4>
+              <p>Served as coordinator, managing telecalling and event operations</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-year">2021 – 2023</span>
+              <h4>Intermediate – Sri Chaitanya Jr. College</h4>
+              <p>Score: 975/1000</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-year">2020 – 2021</span>
+              <h4>SSC – Amalodbhavi St. Marys EM High School</h4>
+              <p>Score: 592/600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🐍</span><span>Python</span></div>
+            <div class="skill-item"><span class="skill-icon">☕</span><span>Java</span></div>
+            <div class="skill-item"><span class="skill-icon">©️</span><span>C</span></div>
+            <div class="skill-item"><span class="skill-icon">📊</span><span>R</span></div>
+            <div class="skill-item"><span class="skill-icon">📊</span><span>DS</span></div>
+          </div>
+        </div>
+
+        <!-- Scripting / Web -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-globe"></i>
+            <h3>Web / Scripting</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🌐</span><span>HTML</span></div>
+            <div class="skill-item"><span class="skill-icon">🎨</span><span>CSS</span></div>
+            <div class="skill-item"><span class="skill-icon">⚡</span><span>JavaScript</span></div>
+            <div class="skill-item"><span class="skill-icon">🐍</span><span>Flask</span></div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-database"></i>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🗄️</span><span>MySQL</span></div>
+            <div class="skill-item"><span class="skill-icon">🗃️</span><span>Oracle</span></div>
+            <div class="skill-item"><span class="skill-icon">📦</span><span>DBMS</span></div>
+          </div>
+        </div>
+
+        <!-- Core CS -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-microchip"></i>
+            <h3>Core CS</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🖥️</span><span>OS</span></div>
+            <div class="skill-item"><span class="skill-icon">🌐</span><span>Networks</span></div>
+            <div class="skill-item"><span class="skill-icon">🏗️</span><span>DSA</span></div>
+            <div class="skill-item"><span class="skill-icon">⚛️</span><span>Quantum Computing</span></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🔧</span><span>VS Code</span></div>
+            <div class="skill-item"><span class="skill-icon">🐙</span><span>Git</span></div>
+            <div class="skill-item"><span class="skill-icon">🐱</span><span>GitHub</span></div>
+            <div class="skill-item"><span class="skill-icon">🎨</span><span>Figma</span></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-heart"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">👑</span><span>Leadership</span></div>
+            <div class="skill-item"><span class="skill-icon">💬</span><span>Communication</span></div>
+            <div class="skill-item"><span class="skill-icon">🧩</span><span>Problem Solving</span></div>
+            <div class="skill-item"><span class="skill-icon">🤝</span><span>Teamwork</span></div>
+            <div class="skill-item"><span class="skill-icon">⏰</span><span>Time Management</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic journey and milestones</p>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-card glass-card">
+            <div class="edu-top">
+              <span class="edu-year">2023 – Present</span>
+              <span class="edu-badge">B.Tech</span>
+            </div>
+            <h3>Computer Science Engineering</h3>
+            <p class="edu-institution">Velagapudi Ramakrishna Siddhartha Engineering College</p>
+            <div class="edu-score"><i class="fas fa-star"></i> CGPA: 9.10 / 10</div>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-card glass-card">
+            <div class="edu-top">
+              <span class="edu-year">2021 – 2023</span>
+              <span class="edu-badge">Intermediate</span>
+            </div>
+            <h3>MPC – Science Stream</h3>
+            <p class="edu-institution">Sri Chaitanya Junior College</p>
+            <div class="edu-score"><i class="fas fa-star"></i> Score: 975 / 1000</div>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-card glass-card">
+            <div class="edu-top">
+              <span class="edu-year">2020 – 2021</span>
+              <span class="edu-badge">SSC</span>
+            </div>
+            <h3>Secondary School Certificate</h3>
+            <p class="edu-institution">Amalodbhavi St. Marys English Medium High School</p>
+            <div class="edu-score"><i class="fas fa-star"></i> Score: 592 / 600</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Hands-on industry experience</p>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card glass-card reveal" data-tilt>
+          <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="exp-content">
+            <span class="exp-type">Internship</span>
+            <h3>Full Stack Web Development</h3>
+            <p class="exp-org">Rise Internship Program – Tamizhan Skills</p>
+            <ul class="exp-points">
+              <li>Developed responsive web pages integrated with external APIs</li>
+              <li>Enhanced user experience through modern UI/UX practices</li>
+              <li>Gained practical exposure to full-stack development workflows and best practices</li>
+            </ul>
+            <div class="exp-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card glass-card reveal" data-tilt>
+          <div class="exp-icon"><i class="fas fa-robot"></i></div>
+          <div class="exp-content">
+            <span class="exp-type">Volunteer / Coordinator</span>
+            <h3>AI Autonomous Hackathon 2025</h3>
+            <p class="exp-org">Coordinator Role</p>
+            <ul class="exp-points">
+              <li>Served as coordinator in a major AI-focused hackathon</li>
+              <li>Managed telecalling, participant coordination, and event operations</li>
+              <li>Facilitated smooth execution of the hackathon</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Leadership</span><span>AI</span><span>Event Management</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card glass-card reveal" data-tilt>
+          <div class="exp-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="exp-content">
+            <span class="exp-type">Volunteer</span>
+            <h3>National Service Scheme (NSS)</h3>
+            <p class="exp-org">VR Siddhartha Engineering College – AD</p>
+            <ul class="exp-points">
+              <li>Participated in food donation drives during flood relief operations</li>
+              <li>Led waste plastic collection and environmental awareness campaigns</li>
+              <li>Anchored NSS Formation Day Event, hosting and coordinating the program</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Community Service</span><span>Leadership</span><span>Event Hosting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Showcasing creativity and technical depth</p>
+      </div>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card glass-card reveal" data-category="ai" data-tilt>
+          <div class="project-img-wrap">
+            <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Quantum Path Planning" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-cat-tag">AI / Quantum</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Quantum Path Planning for Delivery Vehicles</h3>
+            <p>Developed a quantum optimization backend using QUBO formulation for the Vehicle Routing Problem (VRP). Integrated D-Wave Quantum Annealer, simulated annealing, and Tabu Search for benchmarking with a Python + Flask API.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>D-Wave</span><span>NumPy</span><span>Quantum</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/" target="_blank" class="btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="healthcare" data-tilt>
+          <div class="project-img-wrap">
+            <img src="https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smart Healthcare Triage" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-cat-tag">Healthcare</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Smart Healthcare Triage System for Rural Communities</h3>
+            <p>EPICS Project — Designed a mobile-friendly, multilingual platform to classify patient cases as urgent, moderate, or normal. Aims to reduce waiting times at PHCs by prioritizing critical patients and guiding others with self-care advice.</p>
+            <div class="project-tech">
+              <span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>ML</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/" target="_blank" class="btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="web" data-tilt>
+          <div class="project-img-wrap">
+            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Development Project" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-cat-tag">Web Dev</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Responsive Web Application</h3>
+            <p>Built during the Rise Internship at Tamizhan Skills. Developed responsive web pages with API integration to enhance user experience using modern full-stack development practices.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/" target="_blank" class="btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional certifications and completed courses</p>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-body">
+            <h4>Introduction to Cybersecurity</h4>
+            <p>Cisco Networking Academy</p>
+            <span class="cert-tag">Cybersecurity</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-body">
+            <h4>Essentials in C</h4>
+            <p>Cisco Networking Academy</p>
+            <span class="cert-tag">Programming</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-wifi"></i></div>
+          <div class="cert-body">
+            <h4>IoT Fundamentals: Connecting Things</h4>
+            <p>Cisco Networking Academy</p>
+            <span class="cert-tag">IoT</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <div class="cert-body">
+            <h4>Essentials in Python</h4>
+            <p>Cisco Networking Academy</p>
+            <span class="cert-tag">Python</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="cert-body">
+            <h4>Network Security Fundamentals</h4>
+            <p>Paloalto Networks</p>
+            <span class="cert-tag">Security</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-flutter"></i></div>
+          <div class="cert-body">
+            <h4>Tech Winter Break – Flutter Workshop</h4>
+            <p>GDG (Google Developer Groups)</p>
+            <span class="cert-tag">Flutter</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-industry"></i></div>
+          <div class="cert-body">
+            <h4>Industrial Internet of Things</h4>
+            <p>NPTEL</p>
+            <span class="cert-tag">IoT / NPTEL</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-globe"></i></div>
+          <div class="cert-body">
+            <h4>Introduction to Cybersecurity (Advanced)</h4>
+            <p>Cisco Networking Academy</p>
+            <span class="cert-tag">Cybersecurity</span>
+          </div>
+        </div>
+      </div>
+    </div>R
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-subtitle">Milestones and notable accomplishments</p>
+      </div>
+      <div class="achieve-grid">
+        <div class="achieve-card glass-card reveal" data-tilt>
+          <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+          <h3>BITS Pilani Hackathon 2025</h3>
+          <p>Received Certificate of Participation at one of India's most prestigious national-level hackathons</p>
+          <span class="achieve-year">2025</span>
+        </div>
+        <div class="achieve-card glass-card reveal" data-tilt>
+          <div class="achieve-icon"><i class="fas fa-medal"></i></div>
+          <h3>District Elocution Champion</h3>
+          <p>Secured 1st place in District Level Elocution Competition and received ₹5,000 cash prize from the AP Government</p>
+          <span class="achieve-year">Achievement</span>
+        </div>
+        <div class="achieve-card glass-card reveal" data-tilt>
+          <div class="achieve-icon"><i class="fas fa-users"></i></div>
+          <h3>Multiple Hackathon Participations</h3>
+          <p>Participated in several national and state-level hackathons, building innovative solutions under time pressure</p>
+          <span class="achieve-year">Ongoing</span>
+        </div>
+        <div class="achieve-card glass-card reveal" data-tilt>
+          <div class="achieve-icon"><i class="fas fa-microphone"></i></div>
+          <h3>NSS Formation Day Anchor</h3>
+          <p>Hosted and coordinated the NSS Formation Day Event — engaging the audience and ensuring smooth flow of activities</p>
+          <span class="achieve-year">Leadership</span>
+        </div>
+        <div class="achieve-card glass-card reveal" data-tilt>
+          <div class="achieve-icon"><i class="fas fa-music"></i></div>
+          <h3>Cultural Fest Participant</h3>
+          <p>Actively participated in college cultural fests — dance and music events, showcasing artistic talents</p>
+          <span class="achieve-year">Extracurricular</span>
+        </div>
+        <div class="achieve-card glass-card reveal" data-tilt>
+          <div class="achieve-icon"><i class="fas fa-heart"></i></div>
+          <h3>NSS Community Service</h3>
+          <p>Contributed to flood relief management, food donation drives, and environmental initiatives through NSS activities</p>
+          <span class="achieve-year">2024 – 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Memories</span>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Snapshots from my journey</p>
+      </div>
+      <div class="gallery-grid">
+       <div class="gallery-item reveal" data-src="images/thanusree.jpg" data-caption="Chinnam Thanu Sree">
+          <img src="images/thanusree.jpg" alt="Thanu Sree" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" data-caption="Hackathon Session">
+          <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hackathon" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600" data-caption="Coding Session">
+          <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coding" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" data-caption="Team Collaboration">
+          <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Team" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600" data-caption="AI & Technology">
+          <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=600" data-caption="Workshop Event">
+          <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Workshop" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightbox-img" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Kind Words</span>
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-subtitle">What people say about working with me</p>
+      </div>
+      <div class="testimonial-wrap reveal">
+        <div class="testimonial-slider" id="testimonial-slider">
+          <div class="testimonial-item glass-card active">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Thanu Sree is an exceptional student with a rare combination of technical depth and communication skills. Her quantum computing project demonstrated outstanding problem-solving ability."</p>
+            <div class="testimonial-author">
+              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Professor" />
+              <div>
+                <strong>Prof. Ravi Kumar</strong>
+                <span>Faculty, VR Siddhartha Engineering College</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item glass-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"During her internship at Tamizhan Skills, Thanu showed remarkable dedication and quickly grasped complex web development concepts. She delivered quality work consistently."</p>
+            <div class="testimonial-author">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Mentor" />
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Mentor – Rise Internship Program</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item glass-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Her leadership during the AI Autonomous Hackathon 2025 was exemplary. She managed the team with maturity and ensured every task was completed on time. A true team player!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Colleague" />
+              <div>
+                <strong>Arjun Reddy</strong>
+                <span>Co-coordinator, AI Hackathon 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots" id="testimonial-dots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Let's collaborate and build something amazing together</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Talk</h3>
+          <p>I'm currently open to internship opportunities and collaborative projects. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-items">
+            <a href="mailto:thanusreechinnam@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <strong>thanusreechinnam@gmail.com</strong>
+              </div>
+            </a>
+            <a href="tel:+919182464549" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span>Phone</span>
+                <strong>+91 9182464549</strong>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span>Location</span>
+                <strong>India</strong>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/chinnam-thanu-sree-6502a92a3/" target="_blank" class="contact-social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/" target="_blank" class="contact-social-btn github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.instagram.com/" target="_blank" class="contact-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's it about?" />
+            <span class="form-error" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..."></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary full-width magnetic">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">Thanu<span>Sree</span></a>
+          <p>Computer Science Engineering Student | Full Stack Developer | AI Enthusiast</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials-group">
+          <h4>Find Me On</h4>
+          <div class="footer-social-icons">
+            <a href="mailto:thanusreechinnam@gmail.com" class="footer-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/chinnam-thanu-sree-6502a92a3/" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank" class="footer-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Chinnam Thanu Sree. All rights reserved.</p>
+        <p>Made with <span class="heart">&#9829;</span> and passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
